@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>AAC</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Rubik:wght@500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icon Font Stylesheet -->
+    <link href="css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Customized CSS Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Start Spinner -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem"></div>
+    </div>
+    <!-- End Spinner -->
+
+    <!-- Start Topbar -->
+    <!-- <div class="container-fluid topbar px-0">
+        <div class="row g-0 d-none d-lg-flex">
+            <div class="col-lg-6 ps-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center text-white">
+                    <span>Follow Us:</span>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-end">
+                <div class="h-100 topbar-right d-inline-flex align-items-center text-white py-2 px-5">
+                    <span class="fs-5 fw-bold me-2"><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
+                    <span class="fs-5 fw-bold">+9665666333</span>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- End Topbar -->
+
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm sticky-top py-0 px-4">
+        <a href="index.html" class="navbar-brand me-0">
+            <h1 class="text-white m-0">
+                <img src="img/logo.png" alt="logo" class="logo" />
+            </h1>
+        </a>
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="projects.html" class="nav-item nav-link">Services</a>
+                <a href="parteners.html" class="nav-item nav-link">Our Partners</a>
+                <a href="certificates.html" class="nav-item nav-link">Our Clients</a>
+                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                <ul class="switch nav-link">
+                    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" />
+                    <label for="language-toggle"></label>
+                    <li class="on">ع</li>
+                    <li class="off">EN</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Carousel -->
+    <div class="container-fluid px-0 mb-5" onmouseover="carouselHover(this, false)"
+        onmouseout="carouselHover(this, false)">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/slide-one.jpg" alt="Image" />
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10 text-start">
+                                    <h1 class="display-1 text-white mb-2 animated slideInRight land-text">
+                                        AlSaed Alsharqi Company
+                                    </h1>
+                                    <p class="fw-medium text-primary text-uppercase animated slideInRight">
+                                        Solid, Experienced, Innovative
+                                    </p>
+                                    <a href="factory.html" class="btn btn-primary animated slideInRight land-btn">Show
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/slide-aluminum.jpeg" alt="Image" />
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10 text-start">
+                                    <h1 class="display-1 text-white mb-2 animated slideInRight land-text">
+                                        AlSaed Alsharqi Company
+                                    </h1>
+                                    <p class="fw-medium text-primary text-uppercase animated slideInRight">
+                                        Solid, Experienced, Innovative
+                                    </p>
+                                    <a href="factory.html" class="btn btn-primary animated slideInRight land-btn">Show
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/slide-two.jpeg" alt="Image" />
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10 text-start">
+                                    <h1 class="display-1 text-white mb-2 animated slideInRight land-text">
+                                        AlSaed Alsharqi Company
+                                    </h1>
+                                    <p class="fw-medium text-primary text-uppercase animated slideInRight">
+                                        Solid, Experienced, Innovative
+                                    </p>
+                                    <a href="factory.html" class="btn btn-primary animated slideInRight land-btn">Show
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- End Carousel -->
+
+    <!-- Start About -->
+    <div class="container-xxl py-5 about">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <div class="row gx-3 h-100">
+                        <div class="col-12 align-self-center wow fadeInDown" data-wow-delay="0.1s">
+                            <img class="img-fluid about-img" src="img/constructions.jpeg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="fw-medium text-uppercase text-primary mb-2">About Us</p>
+                    <h1 class="display-5 mb-4 text-primary">Our Story</h1>
+                    <p class="mb-4">
+                        <!-- <ul>
+                            <li class="mb-3">
+                                AluSystems was established in 2011 with a vision to provide perfect professional service to the construction field through fulfilling all the requirements of the clients and provide them the best & convenient service utilizing our most experience staff and state of art machinery. 
+                            </li>
+                            <li>
+                                Our production facility covered area is 10,000.0 square meter with a workforce exceeding 500 employees. Accordingly we have more than 20 engineers in technical department using latest design software. our production facility is equipped with latest machinery in the field to provide the client with the quality and accuracy. 
+                            </li>
+                        </ul> -->
+                        AlSaed Alsharqi Companys (AAC) story began over 24 years ago, in
+                        the year 2000, from a small office in Al Dammam, Saudi Arabia, as
+                        a local establishment focused on small construction projects. At
+                        that time, it was known as Fadaa AlSharqia Group for Contracting.
+                        Over the years, AAC has taken huge leaps forward to become a
+                        top-tier Grade A general contracting company, offering a full
+                        spectrum of integrated and turnkey engineering, along with
+                        high-level construction services. Our company boasts strong
+                        financial stability to support large-scale projects, and we offer
+                        a wide range of professional services. Our highly skilled team
+                        specializes in :
+                    <ul class="row mt-2">
+                        <li class="col-md-6">Construction & Maintenance</li>
+                        <li class="col-md-6">Project Management</li>
+                    </ul>
+                    <ul class="row">
+                        <li>Electrical, Mechanical, and Electromechanical Works</li>
+                    </ul>
+                    </p>
+                    <div class="row pt-2 mt-5 about-contact">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mail">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-envelope-open text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <p class="mb-2">Email us</p>
+                                    <h5 class="mb-0">info@alsaed.com</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-phone-alt text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <p class="mb-2">Call us</p>
+                                    <h5 class="mb-0">+9665666333</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About -->
+
+    <!-- Start Categories -->
+    <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px">
+                <h1 class="display-5 mb-4 mt-5">Our Services</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="category-item">
+                        <div class="cont">
+                            <img class="" src="img/categories/aluminum.jpeg" alt="" />
+                        </div>
+                        <a href="alu.html">
+                            <div class="d-flex">
+                                <div class="info-text position-relative overflow-hidden d-flex flex-column justify-content-center w-100"
+                                    style="height: 70px">
+                                    <h5>Construction work</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="category-item">
+                        <div class="cont">
+                            <img class="" src="img/categories/steel.jpeg" alt="" />
+                        </div>
+                        <a href="steel.html">
+                            <div class="d-flex">
+                                <div class="info-text position-relative overflow-hidden d-flex flex-column justify-content-center w-100"
+                                    style="height: 70px">
+                                    <h5>Finishing works</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="category-item">
+                        <div class="cont">
+                            <img class="" src="img/categories/wood.png" alt="" />
+                        </div>
+                        <a href="wood.html">
+                            <div class="d-flex">
+                                <div class="info-text position-relative overflow-hidden d-flex flex-column justify-content-center w-100"
+                                    style="height: 70px">
+                                    <h5>Electromechanical works</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="category-item">
+                        <div class="cont">
+                            <img class="" src="img/categories/glass.jpeg" alt="" />
+                        </div>
+                        <a href="glass.html">
+                            <div class="d-flex">
+                                <div class="info-text position-relative overflow-hidden d-flex flex-column justify-content-center w-100"
+                                    style="height: 70px">
+                                    <h5>Hardscape & Landscape</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="category-item">
+                        <div class="cont">
+                            <img class="" src="img/categories/roofing.jpeg" alt="" />
+                        </div>
+                        <a href="roofing.html">
+                            <div class="d-flex">
+                                <div class="info-text position-relative overflow-hidden d-flex flex-column justify-content-center w-100"
+                                    style="height: 70px">
+                                    <h5>Waterproofing</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- End Categories -->
+    
+    
+    <!-- Start Services -->
+    <section class="services py-5">
+        <div class="container">
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px">
+                <h1 class="display-5 mb-4 mt-5">Our Services</h1>
+            </div>
+            <div class="row g-5">
+                <!-- Services Card -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="/img/constructions.jpeg" class="card-img-top" alt="Article Image" />
+                        <div class="card-body">
+                            <h3 class="h5 mb-0">Construction work</h3>
+                        </div>
+                        <div class="card-foot bg-white border-top">
+                            <a href="#"
+                                class="d-flex justify-content-between align-items-center text-decoration-none fw-bold text-primary arrow-link">
+                                <span>Read More</span>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services Card -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="/img/ShipBuilding.jpg" class="card-img-top" alt="Article Image" />
+                        <div class="card-body">
+                            <h3 class="h5 mb-0">Finishing works</h3>
+                        </div>
+                        <div class="card-foot bg-white border-top">
+                            <a href="#"
+                                class="d-flex justify-content-between align-items-center text-decoration-none fw-bold text-primary arrow-link">
+                                <span>Read More</span>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services Card  -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="/img/elctrro.jpg" class="card-img-top" alt="Article Image" />
+                        <div class="card-body">
+                            <h3 class="h5 mb-0">Electromechanical works</h3>
+                        </div>
+                        <div class="card-foot bg-white border-top">
+                            <a href="#"
+                                class="d-flex justify-content-between align-items-center text-decoration-none fw-bold text-primary arrow-link">
+                                <span>Read More</span>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services Card  -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="/img/landscape.jpeg" class="card-img-top" alt="Article Image" />
+                        <div class="card-body">
+                            <h3 class="h5 mb-0">Hardscape & Landscape</h3>
+                        </div>
+                        <div class="card-foot bg-white border-top">
+                            <a href="#"
+                                class="d-flex justify-content-between align-items-center text-decoration-none fw-bold text-primary arrow-link">
+                                <span>Read More</span>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services Card  -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="/img/waterproof.jpg" class="card-img-top" alt="Article Image" />
+                        <div class="card-body">
+                            <h3 class="h5 mb-0">Waterproofing</h3>
+                        </div>
+                        <div class="card-foot bg-white border-top">
+                            <a href="#"
+                                class="d-flex justify-content-between align-items-center text-decoration-none fw-bold text-primary arrow-link">
+                                <span>Read More</span>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services Card  -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="/img/slide-one.jpg" class="card-img-top" alt="Article Image" />
+                        <div class="card-body">
+                            <h3 class="h5 mb-0">Projects Management</h3>
+                        </div>
+                        <div class="card-foot bg-white border-top">
+                            <a href="#"
+                                class="d-flex justify-content-between align-items-center text-decoration-none fw-bold text-primary arrow-link">
+                                <span>Read More</span>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Services -->
+
+
+    <!-- <div class="experince py-5">
+        <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px">
+            <h1 class="display-5 mb-4 mt-5">Our Experince</h1>
+        </div>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="row gx-3 h-100">
+                        <div class="col-12 align-self-center wow fadeInDown" data-wow-delay="0.1s">
+                            <img class="img-fluid exp-img" src="img/aboutone.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="info">
+                    <div class="box">
+                        <img src="img/slide-one.jpg"  alt="">
+                        <div class="text">
+                            <h3>Busines Analysis</h3>
+                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Enim nesciunt obcaecati quisquam quis laborum recusandae debitis vel
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/slide-one.jpg"  alt="">
+                        <div class="text">
+                            <h3>Architecture</h3>
+                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Enim nesciunt obcaecati quisquam quis laborum recusandae debitis vel
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/slide-one.jpg" alt="">
+                        <div class="text">
+                            <h3>Developement</h3>
+                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Enim nesciunt obcaecati quisquam quis laborum recusandae debitis vel
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Start Experience Section -->
+    <div class="experince py-5">
+        <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px">
+            <h1 class="display-5 mb-4 mt-5">Our Experience</h1>
+        </div>
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <!-- Image Column -->
+                <div class="col-lg-5">
+                    <div class="wow fadeInDown" data-wow-delay="0.1s">
+                        <img class="img-fluid exp-img" src="img//landscape.jpeg" alt="Experience Image" />
+                    </div>
+                </div>
+
+                <!-- Content Column -->
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column gap-3">
+
+                        <!-- Box 1 -->
+                        <div
+                            class="box d-flex flex-md-row flex-column align-items-center bg-light p-4 position-relative overflow-hidden hover-bg">
+                            <div class="text">
+                                <h3 class="h5 mb-1">Expertise in Complex Projects</h3>
+                                <p class="text-muted mb-0">Alsaed Alsharqi boasts extensive expertise and a proven track record in successfully delivering intricate and sophisticated construction projects, including electrical and mechanical works</p>
+                            </div>
+                        </div>
+
+                        <!-- Box 2 -->
+                        <div
+                            class="box d-flex flex-md-row flex-column align-items-center bg-light p-4  position-relative overflow-hidden hover-bg">
+                            <div class="text">
+                                <h3 class="h5 mb-1">Strong Market Presence Since 2000</h3>
+                                <p class="text-muted mb-0">Since its establishment in 2000, the company has grown to become a key player in the Saudi contracting industry, driven by solid experience and innovative thinking</p>
+                            </div>
+                        </div>
+
+                        <!-- Box 3 -->
+                        <div
+                            class="box d-flex flex-md-row flex-column align-items-center bg-light p-4 position-relative overflow-hidden hover-bg">
+                            <div class="text">
+                                <h3 class="h5 mb-1">Commitment to Excellence</h3>
+                                <p class="text-muted mb-0">With a dynamic workforce and a relentless pursuit of excellence, Alsaed Alsharqi has secured remarkable success and earned a firm position as a cornerstone in the kingdom’s construction sector</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Experience Section -->
+
+    <!-- Start Our Clients -->
+    <div class="container-fluid pt-2 mt-5 px-0 clients">
+        <div class="text-center mx-auto mt-5 wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px">
+            <h1 class="fw-medium text-uppercase text-primary mb-2">Our Projects</h1>
+            <p class="mb-5">See What We Have Completed Recently</p>
+        </div>
+        <div class="owl-carousel clients-carousel wow fadeIn" data-wow-delay="0.1s">
+            <a class="client" href="alhamra.html">
+                <img class="img-fluid" src="img/constructions.jpeg" alt="" />
+            </a>
+            <a class="client" href="alhamra.html">
+                <img class="img-fluid" src="img/elctrro.jpg" alt="" />
+            </a>
+            <a class="client" href="kafd-3.10.html">
+                <img class="img-fluid" src="img/landscape.jpeg" alt="" />
+                <!-- <div class="client-title">
+                    <h5 class="text-primary mb-0">ARAMCO</h5>
+                </div> -->
+            </a>
+            <a class="client" href="stc.html">
+                <img class="img-fluid" src="/img/waterproof.jpg" alt="" />
+            </a>
+            <a class="client" href="kafd-2.08.html">
+                <img class="img-fluid" src="img/elctrro.jpg" alt="" />
+            </a>
+            <a class="client" href="alhamra.html">
+                <img class="img-fluid" src="img/landscape.jpeg" alt="" />
+            </a>
+            <a class="client" href="stc.html">
+                <img class="img-fluid" src="img/constructions.jpeg" alt="" />
+            </a>
+            <a class="client" href="kafd-2.08.html">
+                <img class="img-fluid" src="img/constructions.jpeg" alt="" />
+            </a>
+            <a class="client" href="kafd-3.10.html">
+                <img class="img-fluid" src="img/slide-one.jpg" alt="" />
+                <div class="client-title">
+                </div>
+            </a>
+            <a class="client" href="alhamra.html">
+                <img class="img-fluid" src="img/landscape.jpeg" alt="" />
+            </a>
+            <a class="client" href="stc.html">
+                <img class="" src="img/waterproof.jpg" alt="" />
+            </a>
+        </div>
+    </div> 
+    <!-- End Our Clients -->
+
+    <!-- Start Facts -->
+    <div class="container-fluid facts my-5 p-5">
+        <div class="row g-5">
+            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
+                <div class="text-center border p-5">
+                    <i class="fa fa-certificate fa-3x text-white mb-3"></i>
+                    <h1 class="display-2 text-white mb-0" data-toggle="counter-up">
+                        25
+                    </h1>
+                    <span class="fs-5 fw-semi-bold text-white">Years Experience</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.3s">
+                <div class="text-center border p-5">
+                    <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
+                    <h1 class="display-2 text-white mb-0" data-toggle="counter-up">
+                        33
+                    </h1>
+                    <span class="fs-5 fw-semi-bold text-white">Employees</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.5s">
+                <div class="text-center border p-5">
+                    <i class="fa fa-users fa-3x text-white mb-3"></i>
+                    <h1 class="display-2 text-white mb-0" data-toggle="counter-up">
+                        50
+                    </h1>
+                    <span class="fs-5 fw-semi-bold text-white">Client Served</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.7s">
+                <div class="text-center border p-5">
+                    <i class="fa fa-check-double fa-3x text-white mb-3"></i>
+                    <h1 class="display-2 text-white mb-0" data-toggle="counter-up">
+                        50
+                    </h1>
+                    <span class="fs-5 fw-semi-bold text-white">Project Completed</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Facts -->
+
+    <!-- Start Footer -->
+    <div class="container-fluid footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6 align-self-center">
+                    <!-- <h5 class="mb-2 fs-4">Alsaed Alsharqi</h5> -->
+                    <img src="img/logo.png" alt="">
+                    <div class="d-flex pt-4">
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="products.html">Products</a>
+                    <a class="btn btn-link" href="parteners.html">Our Parteners</a>
+                    <a class="btn btn-link" href="certificates.html">Certificates</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                </div>  
+                <div class="col-lg-5 col-md-6">
+                    <h5 class="mb-4">Our Office</h5>
+                    <div class="d-flex address">
+                        <i class="fa fa-map-marker-alt me-3"></i>
+                        <p class="mb-3">
+                            3299 - Al Mishael Dist. Unit No 9 Riyadh 14327 - 7171 Kingdom of
+                            Saudi Arabia
+                        </p>
+                    </div>
+                    <p class="mb-3"><i class="fa fa-phone-alt me-3"></i>+9665666333</p>
+                    <p class="mb-3">
+                        <i class="fa fa-envelope me-3"></i>info@alsaedalsharqi.com
+                    </p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Start Copyright -->
+    <div class="container-fluid copyright py-4">
+        <div class="container text-center">
+            <p class="mb-2">
+                Copyright &copy; <span class="fw-bold">Alsaed Alsharqi</span> , All
+                Right Reserved.
+            </p>
+        </div>
+    </div>
+    <!-- End Copyright -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
