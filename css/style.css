@@ -64,6 +64,10 @@ h6,
 .fw-semi-bold {
     font-weight: 500 !important;
 }
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
 /* End Global Rules */
 
 
@@ -951,7 +955,7 @@ ul.switch{
     /* color: #B0B9AE;/ */
     /* border-top: 1px solid rgb(13, 21, 44, .3); */
     /* background-color: var(--primary); */
-    background-color: #e2dede;
+    background-color: #ddd;
     color: var(--primary);
 }
 /* End Footer & copyright */
