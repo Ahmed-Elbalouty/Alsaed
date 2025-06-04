@@ -11,12 +11,11 @@
     <!-- Favicon -->
     <link href="img/logo.png" rel="icon">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Rubik:wght@500;600;700&display=swap"
-        rel="stylesheet">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700;900&display=swap"
+        rel="stylesheet" />
 
     <!-- Icon Font Stylesheet -->
     <link href="css/all.min.css" rel="stylesheet">
@@ -41,53 +40,39 @@
     </div>
     <!-- End Spinner -->
 
-
-    <!-- Start Topbar -->
-    <div class="container-fluid bg-dark px-0">
-        <div class="row g-0 d-none d-lg-flex">
-            <div class="col-lg-6 ps-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center text-white">
-                    <span>Follow Us:</span>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-6 text-end">
-                <div class="h-100 topbar-right d-inline-flex align-items-center text-white py-2 px-5">
-                    <span class="fs-5 fw-bold me-2"><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
-                    <span class="fs-5 fw-bold">+9665666333</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Topbar -->
-    
-    
     <!-- Start Navbar -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
-        <a href="index.html" class="navbar-brand ps-5 me-0">
-            <h1 class="text-white m-0"><img src="img/logo.png" alt="logo" class="logo"></h1>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm fixed-top py-0 px-4">
+        <a href="index.html" class="navbar-brand me-0">
+            <p class="text-primary m-0 d-flex align-items-center">
+                <img src="img/logo.jpeg" alt="logo" class="logo" />
+                <img src="img/name.jpeg" class="name" alt="">
+            </p>
         </a>
         <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link active">About</a>
-                <a href="products.html" class="nav-item nav-link">Products</a>
-                <a href="projects.html" class="nav-item nav-link">Projects</a>
-                <a href="parteners.html" class="nav-item nav-link">Our Partners</a>
-                <a href="certificates.html" class="nav-item nav-link">Certificates</a>
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <!-- Services Dropdown -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                    <div class="dropdown-menu">
+                        <a href="services.html" class="dropdown-item">Private sector</a>
+                        <a href="services.html" class="dropdown-item">Government sector</a>
+                    </div>
+                </div>
+                <a href="clients.html" class="nav-item nav-link">Our Clients</a>
                 <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+
+                <!-- Language Switch -->
                 <ul class="switch nav-link">
-                    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" />
                     <label for="language-toggle"></label>
-                    <li class="on">ع</li>
-                    <li class="off">EN</li>
-                  </ul>
+                    <li class="ar">ع</li>
+                    <li class="en">EN</li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -116,44 +101,57 @@
                 <div class="col-lg-5">
                     <div class="row gx-3 h-100">
                         <div class="col-12 align-self-center wow fadeInDown" data-wow-delay="0.1s">
-                            <img class="img-fluid about-img" src="img/aluminum/3.jpeg ">
+                            <img class="img-fluid about-img" src="img/constructions.jpeg ">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.2s">
                     <p class="fw-medium text-uppercase text-primary mb-2">About Us</p>
-                    <h1 class="display-5 mb-4">Our Story</h1>
+                    <h1 class="display-6 mb-4">Our Story</h1>
                     <p class="mb-4">
-                        <ul>
-                            <li class="mb-3">
-                                AluSystems was established in 2011 with a vision to provide perfect professional service to the construction field through fulfilling all the requirements of the clients and provide them the best & convenient service utilizing our most experience staff and state of art machinery. 
-                            </li>
-                            <li>
-                                Our production facility covered area is 10,000.0 square meter with a workforce exceeding 500 employees. Accordingly we have more than 20 engineers in technical department using latest design software. our production facility is equipped with latest machinery in the field to provide the client with the quality and accuracy. 
-                            </li>
-                        </ul>
+                        AlSaed Alsharqi Companys (AAC) story began over 24 years ago, in
+                        the year 2000, from a small office in Al Dammam, Saudi Arabia, as
+                        a local establishment focused on small construction projects. At
+                        that time, it was known as Fadaa AlSharqia Group for Contracting.
+                        Over the years, AAC has taken huge leaps forward to become a
+                        top-tier Grade A general contracting company, offering a full
+                        spectrum of integrated and turnkey engineering, along with
+                        high-level construction services. Our company boasts strong
+                        financial stability to support large-scale projects, and we offer
+                        a wide range of professional services. Our highly skilled team
+                        specializes in :
+                    <ul class="row mt-2">
+                        <li class="col-md-6">Construction & Maintenance</li>
+                        <li class="col-md-6">Project Management</li>
+                    </ul>
+                    <ul class="row">
+                        <li>Electrical, Mechanical, and Electromechanical Works</li>
+                    </ul>
                     </p>
                 </div>
             </div>
 
             <div class="row g-5 mt-5 wow fadeInUp" data-wow-delay="0.2s">
-                <h3>Management message ..</h3>
-                <p class="mt-2">We started our journey in July 4, 2011 with one Aluminum fabrication line and we continue over the year to build our brand name, our product lines, our team and reputation.</p>
-                <p class="mt-2">Now a days Alusystems pride are the engineering team, state of art machineries, and client’s confidents and trust.</p>
+                <h3>Our Mission ...</h3>
+                <p class="mt-2">At the heart of our work is a commitment to excellence — for our clients, our team, and
+                    every project we undertake. We strive to exceed expectations through quality, professionalism, and
+                    attention to detail.</p>
                 <div class="d-flex align-items-center mb-0 mt-0">
                     <div class="p-4">
-                        <p><i class="fa fa-check text-primary me-2"></i>Three Aluminum production lines</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Two glass fabrication lines</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Sophisticated steel production line</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Fire rated metal door</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Fire rated wooden door</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Powder coating facility</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Powder coating facility</p>
-                        <p class="mb-0"><i class="fa fa-check text-primary me-2"></i>More than 200,000 square meter production capacity.</p>
+                        <p><i class="fa fa-check text-primary me-2"></i>Provide exceptional service that surpasses
+                            client expectations.</p>
+                        <p><i class="fa fa-check text-primary me-2"></i>Uphold the highest standards of quality in all
+                            our efforts.</p>
+                        <p><i class="fa fa-check text-primary me-2"></i>Empower our employees with opportunities for
+                            growth and success.</p>
+                        <p><i class="fa fa-check text-primary me-2"></i>Utilize a professional management approach to
+                            instill trust and confidence.</p>
+                        <p><i class="fa fa-check text-primary me-2"></i>Handle all project aspects with meticulous care
+                            and precision.</p>
+                        <p><i class="fa fa-check text-primary me-2"></i>Ensure the best possible outcome, regardless of
+                            project size.</p>
                     </div>
                 </div>
-                <p class="mt-3">Taking into consideration that during the year we were customer oriented which enable us to achieve our success story.</p>
-                <p class="mt-1 mb-5">TFor the future we in Alusystem continue concentrating on our client’s needs with best services latest engineering solution with the highest technological ways.</p>
                 <div class="row pt-2 about-contact">
                     <div class="col-sm-6">
                         <div class="d-flex align-items-center mail">
@@ -183,14 +181,13 @@
     </div>
     <!-- End About -->
 
-
     <!-- Start Footer -->
     <div class="container-fluid footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6 align-self-center">
-                    <!-- <h5 class="mb-2 fs-4">Alsaed Alsharqi</h5> -->
-                    <img src="img/logo.png" alt="">
+                    <img src="img/logo.jpeg" alt="">
+                    <img src="img/name.jpeg" alt="" class="name">
                     <div class="d-flex pt-4">
                         <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
                                 class="fab fa-twitter"></i></a>
@@ -203,15 +200,15 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="mb-4">Quick Links</h5>
+                    <h5 class="mb-4 fw-semibold">Quick Links</h5>
                     <a class="btn btn-link" href="about.html">About Us</a>
                     <a class="btn btn-link" href="products.html">Products</a>
                     <a class="btn btn-link" href="parteners.html">Our Parteners</a>
                     <a class="btn btn-link" href="certificates.html">Certificates</a>
                     <a class="btn btn-link" href="contact.html">Contact Us</a>
-                </div>  
+                </div>
                 <div class="col-lg-5 col-md-6">
-                    <h5 class="mb-4">Our Office</h5>
+                    <h5 class="mb-4 fw-semibold">Our Office</h5>
                     <div class="d-flex address">
                         <i class="fa fa-map-marker-alt me-3"></i>
                         <p class="mb-3">
@@ -223,16 +220,6 @@
                     <p class="mb-3">
                         <i class="fa fa-envelope me-3"></i>info@alsaedalsharqi.com
                     </p>
-                    <div class="d-flex pt-3">
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
-                                class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -243,7 +230,7 @@
     <div class="container-fluid copyright py-4">
         <div class="container text-center">
             <p class="mb-2">
-                Copyright &copy; <span class="fw-bold">Alsaed Alsharqi</span> , All
+                Copyright &copy; <span class="fw-bold text-primary">Alsaed Alsharqi</span>, All
                 Right Reserved.
             </p>
         </div>

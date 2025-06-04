@@ -10,11 +10,11 @@
     <!-- Favicon -->
     <link href="img/logo.png" rel="icon" />
 
-    <!-- Google Web Fonts -->
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Rubik:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700;900&display=swap"
       rel="stylesheet"
     />
 
@@ -50,48 +50,15 @@
     </div>
     <!-- End Spinner -->
 
-    <!-- Start Topbar -->
-    <div class="container-fluid bg-dark px-0">
-      <div class="row g-0 d-none d-lg-flex">
-        <div class="col-lg-6 ps-5 text-start">
-          <div class="h-100 d-inline-flex align-items-center text-white">
-            <span>Follow Us:</span>
-            <a class="btn btn-link text-light" href=""
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a class="btn btn-link text-light" href=""
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a class="btn btn-link text-light" href=""
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a class="btn btn-link text-light" href=""
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </div>
-        </div>
-        <div class="col-lg-6 text-end">
-          <div
-            class="h-100 topbar-right d-inline-flex align-items-center text-white py-2 px-5"
-          >
-            <span class="fs-5 fw-bold me-2"
-              ><i class="fa fa-phone-alt me-2"></i>Call Us:</span
-            >
-            <span class="fs-5 fw-bold">+9665666333</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Topbar -->
-
     <!-- Start Navbar -->
     <nav
-      class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5"
+      class="navbar navbar-expand-lg bg-white navbar-light shadow-sm fixed-top py-0 px-4"
     >
-      <a href="index.html" class="navbar-brand ps-5 me-0">
-        <h1 class="text-white m-0">
-          <img src="img/logo.png" alt="logo" class="logo" />
-        </h1>
+      <a href="index.html" class="navbar-brand me-0">
+        <p class="text-primary m-0 d-flex align-items-center">
+          <img src="img/logo.jpeg" alt="logo" class="logo" />
+          <img src="img/name.jpeg" class="name" alt="" />
+        </p>
       </a>
       <button
         type="button"
@@ -103,13 +70,27 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
-          <a href="index.html" class="nav-item nav-link">Home</a>
+          <a href="index.html" class="nav-item nav-link active">Home</a>
           <a href="about.html" class="nav-item nav-link">About</a>
-          <a href="products.html" class="nav-item nav-link">Products</a>
-          <a href="projects.html" class="nav-item nav-link">Projects</a>
-          <a href="parteners.html" class="nav-item nav-link">Our Partners</a>
-          <a href="certificates.html" class="nav-item nav-link">Certificates</a>
+          <!-- Services Dropdown -->
+          <div class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              >Services</a
+            >
+            <div class="dropdown-menu">
+              <a href="services.html" class="dropdown-item">Private sector</a>
+              <a href="services.html" class="dropdown-item"
+                >Government sector</a
+              >
+            </div>
+          </div>
+          <a href="clients.html" class="nav-item nav-link">Our Clients</a>
           <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+
+          <!-- Language Switch -->
           <ul class="switch nav-link">
             <input
               id="language-toggle"
@@ -117,8 +98,8 @@
               type="checkbox"
             />
             <label for="language-toggle"></label>
-            <li class="on">ع</li>
-            <li class="off">EN</li>
+            <li class="ar">ع</li>
+            <li class="en">EN</li>
           </ul>
         </div>
       </div>
@@ -163,8 +144,8 @@
       <div class="container py-5">
         <div class="row g-5">
           <div class="col-lg-4 col-md-6 align-self-center">
-            <!-- <h5 class="mb-2 fs-4">Alsaed Alsharqi</h5> -->
-            <img src="img/logo.png" alt="" />
+            <img src="img/logo.jpeg" alt="" />
+            <img src="img/name.jpeg" alt="" class="name" />
             <div class="d-flex pt-4">
               <a class="btn btn-square btn-primary rounded-circle me-2" href=""
                 ><i class="fab fa-twitter"></i
@@ -181,7 +162,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
-            <h5 class="mb-4">Quick Links</h5>
+            <h5 class="mb-4 fw-semibold">Quick Links</h5>
             <a class="btn btn-link" href="about.html">About Us</a>
             <a class="btn btn-link" href="products.html">Products</a>
             <a class="btn btn-link" href="parteners.html">Our Parteners</a>
@@ -189,7 +170,7 @@
             <a class="btn btn-link" href="contact.html">Contact Us</a>
           </div>
           <div class="col-lg-5 col-md-6">
-            <h5 class="mb-4">Our Office</h5>
+            <h5 class="mb-4 fw-semibold">Our Office</h5>
             <div class="d-flex address">
               <i class="fa fa-map-marker-alt me-3"></i>
               <p class="mb-3">
@@ -201,20 +182,6 @@
             <p class="mb-3">
               <i class="fa fa-envelope me-3"></i>info@alsaedalsharqi.com
             </p>
-            <div class="d-flex pt-3">
-              <a class="btn btn-square btn-primary rounded-circle me-2" href=""
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a class="btn btn-square btn-primary rounded-circle me-2" href=""
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a class="btn btn-square btn-primary rounded-circle me-2" href=""
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a class="btn btn-square btn-primary rounded-circle me-2" href=""
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
           </div>
         </div>
       </div>
@@ -225,8 +192,9 @@
     <div class="container-fluid copyright py-4">
       <div class="container text-center">
         <p class="mb-2">
-          Copyright &copy; <span class="fw-bold">Alsaed Alsharqi</span> , All
-          Right Reserved.
+          Copyright &copy;
+          <span class="fw-bold text-primary">Alsaed Alsharqi</span>, All Right
+          Reserved.
         </p>
       </div>
     </div>

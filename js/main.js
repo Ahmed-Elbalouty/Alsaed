@@ -70,6 +70,47 @@
       },
     },
   });
+  $(document).on("click", function (e) {
+    if (window.innerWidth < 992) {
+      var $dropdown = $(".nav-item.dropdown");
+      var $menu = $dropdown.find(".dropdown-menu");
+      var $toggle = $dropdown.find(".dropdown-toggle");
+
+      // If click is outside the dropdown
+      if (!$dropdown.is(e.target) && $dropdown.has(e.target).length === 0) {
+        if ($menu.hasClass("show")) {
+          const bsDropdown =
+            bootstrap.Dropdown.getInstance($toggle[0]) ||
+            new bootstrap.Dropdown($toggle[0]);
+          bsDropdown.hide();
+        }
+      }
+    }
+  });
+  // Active navbar link
+  var currentPage = window.location.pathname.split("/").pop(); // e.g., "about.html"
+  $(".navbar-nav .nav-link").each(function () {
+    var linkPage = $(this).attr("href");
+
+    // Match exact href
+    if (linkPage === currentPage) {
+      $(".navbar-nav .nav-link").removeClass("active");
+      $(this).addClass("active");
+    }
+  });
+  // FAQ toggle
+  $(".faq-question").on("click", function () {
+    var $icon = $(this).find(".faq-icon");
+    var $answer = $(this).next(".faq-answer");
+
+    // Optional: Close all others first
+    $(".faq-answer").not($answer).slideUp();
+    $(".faq-icon").not($icon).text("+");
+
+    // Toggle current
+    $answer.slideToggle();
+    $icon.text($icon.text() === "+" ? "−" : "+");
+  });
 })(jQuery);
 
 // Carousel played on hover
