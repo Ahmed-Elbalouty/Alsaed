@@ -140,6 +140,14 @@ html, body {
 .navbar img.name{
     height: 35px;
 }
+@media (max-width: 767px) {
+    .navbar .logo{
+        width: 50px;
+    }
+    .navbar img.name{
+        height: 22px;
+    }
+}
 .dropdown-menu {
     display: none;
     border-radius: 0.5rem;
