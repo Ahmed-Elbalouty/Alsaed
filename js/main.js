@@ -45,6 +45,7 @@
   // Clients Carousel
   $(".projects-carousel").owlCarousel({
     autoplay: true,
+    rtl: true,
     smartSpeed: 1000,
     loop: true,
     center: true,

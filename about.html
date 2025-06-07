@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -29,7 +29,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <link href="css/style-rtl.css" rel="stylesheet">
 </head>
 
 <body>
@@ -39,6 +40,7 @@
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- End Spinner -->
+
 
     <!-- Start Navbar -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm fixed-top px-md-4 px-sm-1 py-0">
@@ -53,9 +55,15 @@
                     <img src="img/name.jpeg" class="name" alt="">
                 </a>
             </div>
+            <ul class="switch nav-link m-0 d-flex align-items-center order-lg-3">
+                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" />
+                <label for="language-toggle" class="mb-0"></label>
+                <li class="ar">ع</li>
+                <li class="en">EN</li>
+            </ul>
 
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <div class="collapse navbar-collapse order-lg-2" id="navbarCollapse">
+                <div class="navbar-nav me-auto p-4 p-lg-0">
                     <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
 
@@ -71,13 +79,6 @@
                     <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                 </div>
             </div>
-            
-            <ul class="switch nav-link m-0 d-flex align-items-center">
-                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" />
-                <label for="language-toggle" class="mb-0"></label>
-                <li class="ar">ع</li>
-                <li class="en">EN</li>
-            </ul>
         </div>
     </nav>
     <!-- End Navbar -->
@@ -89,8 +90,8 @@
             <h1 class="display-3 text-white animated slideInRight">About Us</h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb animated slideInRight mb-0">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                    <li class="slash"><a href="index.html">Home&nbsp;/ </a></li>
+                    <li class="slash" aria-current="page">&nbsp;About Us</li>
                 </ol>
             </nav>
         </div>
@@ -124,35 +125,33 @@
                         financial stability to support large-scale projects, and we offer
                         a wide range of professional services. Our highly skilled team
                         specializes in :
-                    <ul class="row mt-2">
-                        <li class="col-md-6">Construction & Maintenance</li>
-                        <li class="col-md-6">Project Management</li>
-                    </ul>
                     <ul class="row">
-                        <li>Electrical, Mechanical, and Electromechanical Works</li>
+                        <li class="col-md-6 my-1">Construction & Maintenance</li>
+                        <li class="col-md-6 my-1">Project Management</li>
+                        <li class="col-md-6 my-1">Electrical, Mechanical, and Electromechanical Works</li>
                     </ul>
                     </p>
                 </div>
             </div>
 
-            <div class="row g-5 mt-5 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="mission row g-5 mt-5 wow fadeInUp" data-wow-delay="0.2s">
                 <h3>Our Mission ...</h3>
                 <p class="mt-2">At the heart of our work is a commitment to excellence — for our clients, our team, and
                     every project we undertake. We strive to exceed expectations through quality, professionalism, and
                     attention to detail.</p>
                 <div class="d-flex align-items-center mb-0 mt-0">
-                    <div class="p-4">
-                        <p><i class="fa fa-check text-primary me-2"></i>Provide exceptional service that surpasses
+                    <div class="p-4 mission-icons">
+                        <p><i class="fa fa-check text-primary"></i>Provide exceptional service that surpasses
                             client expectations.</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Uphold the highest standards of quality in all
+                        <p><i class="fa fa-check text-primary"></i>Uphold the highest standards of quality in all
                             our efforts.</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Empower our employees with opportunities for
+                        <p><i class="fa fa-check text-primary"></i>Empower our employees with opportunities for
                             growth and success.</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Utilize a professional management approach to
+                        <p><i class="fa fa-check text-primary"></i>Utilize a professional management approach to
                             instill trust and confidence.</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Handle all project aspects with meticulous care
+                        <p><i class="fa fa-check text-primary"></i>Handle all project aspects with meticulous care
                             and precision.</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Ensure the best possible outcome, regardless of
+                        <p><i class="fa fa-check text-primary"></i>Ensure the best possible outcome, regardless of
                             project size.</p>
                     </div>
                 </div>
@@ -162,7 +161,7 @@
                             <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
                                 <i class="fa fa-envelope-open text-white"></i>
                             </div>
-                            <div class="ms-3">
+                            <div class="contact-icon">
                                 <p class="mb-2">Email us</p>
                                 <h5 class="mb-0">info@alusystems.com</h5>
                             </div>
@@ -173,7 +172,7 @@
                             <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
                                 <i class="fa fa-phone-alt text-white"></i>
                             </div>
-                            <div class="ms-3">
+                            <div class="contact-icon">
                                 <p class="mb-2">Call us</p>
                                 <h5 class="mb-0">+9665666333</h5>
                             </div>
@@ -184,6 +183,7 @@
         </div>
     </div>
     <!-- End About -->
+
 
     <!-- Start Footer -->
     <div class="container-fluid footer mt-5 py-2 py-md-4 wow fadeIn" data-wow-delay="0.1s">
@@ -211,18 +211,18 @@
                     <a class="btn btn-link" href="certificates.html">Certificates</a>
                     <a class="btn btn-link" href="contact.html">Contact Us</a>
                 </div>
-                <div class="col-lg-5 col-md-6">
+                <div class="col-lg-5 col-md-6 office-icons">
                     <h5 class="mb-4 fw-semibold">Our Office</h5>
                     <div class="d-flex address">
-                        <i class="fa fa-map-marker-alt me-3"></i>
+                        <i class="fa fa-map-marker-alt icon"></i>
                         <p class="mb-3">
                             3299 - Al Mishael Dist. Unit No 9 Riyadh 14327 - 7171 Kingdom of
                             Saudi Arabia
                         </p>
                     </div>
-                    <p class="mb-3"><i class="fa fa-phone-alt me-3"></i>+9665666333</p>
+                    <p class="mb-3"><i class="fa fa-phone-alt icon"></i>+9665666333</p>
                     <p class="mb-3">
-                        <i class="fa fa-envelope me-3"></i>info@alsaedalsharqi.com
+                        <i class="fa fa-envelope icon"></i>info@alsaedalsharqi.com
                     </p>
                 </div>
             </div>
@@ -230,6 +230,7 @@
     </div>
     <!-- End Footer -->
 
+    
     <!-- Start Copyright -->
     <div class="container-fluid copyright py-4">
         <div class="container text-center">

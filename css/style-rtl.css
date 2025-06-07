@@ -66,6 +66,7 @@ h6,
 
 body {
     font-family: "Inter", sans-serif;
+    direction: rtl;
 }
 
 html,
@@ -219,14 +220,14 @@ body {
 
 .navbar .navbar-brand {
     position: relative;
-    padding-right: .25rem;
+    padding-left: .25rem;
     height: 75px;
     display: flex;
     align-items: center;
 }
 
 .navbar .navbar-nav .nav-link {
-    margin-right: 30px;
+    margin-left: 30px;
     padding: 20px 0;
     color: var(--dark);
     font-size: 18px;
@@ -236,7 +237,7 @@ body {
 
 @media (min-width:991.99px) and (max-width: 1150px) {
     .navbar .navbar-nav .nav-link {
-        margin-right: 18px;
+        margin-left: 18px;
         font-size: 16px;
     }
 }
@@ -252,7 +253,7 @@ body {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     vertical-align: middle;
-    margin-left: 8px;
+    margin-right: 8px;
 }
 
 @media (max-width: 991.98px) {
@@ -407,7 +408,7 @@ input.check-toggle-round-flat:checked+label::after {
     bottom: 0;
     display: flex;
     align-items: center;
-    background: linear-gradient(to right, rgb(38, 65, 110, .8) 0%, rgba(2, 36, 91, 0) 100%);
+    background: linear-gradient(to left, rgb(38, 65, 110, .8) 0%, rgba(2, 36, 91, 0) 100%);
     z-index: 1;
 }
 
@@ -513,7 +514,7 @@ input.check-toggle-round-flat:checked+label::after {
 }
 
 .page-header {
-    background: linear-gradient(to right, rgb(38, 65, 110, .8) 0%, rgba(2, 36, 91, 0) 100%), url(../img/about-us.jpg) center center no-repeat;
+    background: linear-gradient(to left, rgb(38, 65, 110, .8) 0%, rgba(2, 36, 91, 0) 100%), url(../img/about-us.jpg) center center no-repeat;
     background-size: cover;
     margin-top: 83px;
 }
@@ -545,6 +546,7 @@ input.check-toggle-round-flat:checked+label::after {
         margin-bottom: 30px;
     }
 }
+
 .contact-icon {
     margin-inline-start: 1rem;
 }
@@ -579,10 +581,9 @@ input.check-toggle-round-flat:checked+label::after {
     height: 200px;
 }
 
-.rtl-only {
+.ltr-only {
     display: none;
 }
-
 
 .arrow-link i {
     transition: transform var(--main-transition) ease;
@@ -594,7 +595,7 @@ input.check-toggle-round-flat:checked+label::after {
 
 @keyframes moving-arrow {
     100% {
-        transform: translateX(10px);
+        transform: translateX(-10px);
     }
 }
 
@@ -818,6 +819,15 @@ input.check-toggle-round-flat:checked+label::after {
 /* End Services Page */
 
 
+/* Start Projects */
+
+.projects .project-info strong {
+    font-size: 18px;
+}
+
+/* End Projects */
+
+
 /* Start Clients Page */
 .clients-page p {
     color: var(--primary);
@@ -838,31 +848,31 @@ input.check-toggle-round-flat:checked+label::after {
 }
 
 .footer .office-icons .icon {
-    margin-right: .5rem;
+    margin-left: .5rem;
 }
 
 .footer .btn.btn-link {
     display: block;
     margin-bottom: 5px;
     padding: 0;
-    text-align: left;
+    text-align: start;
     font-weight: normal;
     text-transform: capitalize;
     transition: var(--main-transition);
     color: #727271
 }
 
-.footer .btn.btn-link::before {
+.footer .btn.btn-link::after {
     position: relative;
-    content: "\f105";
+    content: "\f104";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .footer .btn.btn-link:hover {
     box-shadow: none;
-    transform: translateX(10px);
+    transform: translateX(-10px);
     color: var(--primary);
 }
 
@@ -912,7 +922,6 @@ input.check-toggle-round-flat:checked+label::after {
 .project-box .carousel,
 .project-box .carousel-inner,
 .project-box .carousel-item {
-    height: 100%;
     max-height: 100%;
     width: 100%;
 }
