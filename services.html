@@ -52,56 +52,64 @@
 
     <!-- Start Navbar -->
     <nav
-      class="navbar navbar-expand-lg bg-white navbar-light shadow-sm fixed-top py-0 px-4"
+      class="navbar navbar-expand-lg bg-white navbar-light shadow-sm fixed-top px-md-4 px-sm-1 py-0"
     >
-      <a href="index.html" class="navbar-brand me-0">
-        <p class="text-primary m-0 d-flex align-items-center">
-          <img src="img/logo.jpeg" alt="logo" class="logo" />
-          <img src="img/name.jpeg" class="name" alt="" />
-        </p>
-      </a>
-      <button
-        type="button"
-        class="navbar-toggler me-0"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
+      <div
+        class="container-fluid py-1 d-flex justify-content-between align-items-center"
       >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
-          <a href="index.html" class="nav-item nav-link active">Home</a>
-          <a href="about.html" class="nav-item nav-link">About</a>
-          <!-- Services Dropdown -->
-          <div class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >Services</a
-            >
-            <div class="dropdown-menu">
-              <a href="services.html" class="dropdown-item">Private sector</a>
-              <a href="services.html" class="dropdown-item"
-                >Government sector</a
-              >
-            </div>
-          </div>
-          <a href="clients.html" class="nav-item nav-link">Our Clients</a>
-          <a href="contact.html" class="nav-item nav-link">Contact Us</a>
-
-          <!-- Language Switch -->
-          <ul class="switch nav-link">
-            <input
-              id="language-toggle"
-              class="check-toggle check-toggle-round-flat"
-              type="checkbox"
-            />
-            <label for="language-toggle"></label>
-            <li class="ar">ع</li>
-            <li class="en">EN</li>
-          </ul>
+        <div class="d-flex align-items-center gap-1">
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a
+            href="index.html"
+            class="navbar-brand d-flex align-items-center me-0"
+          >
+            <img src="img/logo.jpeg" alt="logo" class="logo" />
+            <img src="img/name.jpeg" class="name" alt="" />
+          </a>
         </div>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Services</a
+              >
+              <div class="dropdown-menu">
+                <a href="services.html" class="dropdown-item">Private sector</a>
+                <a href="services.html" class="dropdown-item"
+                  >Government sector</a
+                >
+              </div>
+            </div>
+
+            <a href="clients.html" class="nav-item nav-link">Our Clients</a>
+            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+          </div>
+        </div>
+
+        <ul class="switch nav-link m-0 d-flex align-items-center">
+          <input
+            id="language-toggle"
+            class="check-toggle check-toggle-round-flat"
+            type="checkbox"
+          />
+          <label for="language-toggle" class="mb-0"></label>
+          <li class="ar">ع</li>
+          <li class="en">EN</li>
+        </ul>
       </div>
     </nav>
     <!-- End Navbar -->
@@ -124,14 +132,14 @@
     <!-- End Page Header -->
 
     <!-- Start Services -->
-    <div class="container-xxl py-5 products">
+    <div class="container-xxl py-5 services-page">
       <div class="container">
         <div class="row gy-5 gx-4 justify-content-center">
           <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="product-item">
+            <div class="service-item">
               <img class="img-fluid" src="img/waterproof.jpg" alt="" />
-              <div class="product-detail">
-                <div class="product-title">
+              <div class="service-detail">
+                <div class="service-title">
                   <hr class="w-25" />
                   <h3 class="mb-0 text-center">Construction work</h3>
                   <hr class="w-25" />
@@ -141,10 +149,10 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="product-item">
+            <div class="service-item">
               <img class="img-fluid" src="img/landscape.jpeg" alt="" />
-              <div class="product-detail">
-                <div class="product-title">
+              <div class="service-detail">
+                <div class="service-title">
                   <hr class="w-25" />
                   <h3 class="mb-0 text-center">Finishing works</h3>
                   <hr class="w-25" />
@@ -154,10 +162,10 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="product-item">
+            <div class="service-item">
               <img class="img-fluid" src="img/elctrro.jpg" alt="" />
-              <div class="product-detail">
-                <div class="product-title">
+              <div class="service-detail">
+                <div class="service-title">
                   <hr class="w-25" />
                   <h3 class="mb-0 text-center">Electromechanical works</h3>
                   <hr class="w-25" />
@@ -167,10 +175,10 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="product-item">
+            <div class="service-item">
               <img class="img-fluid" src="img/constructions.jpeg" alt="" />
-              <div class="product-detail">
-                <div class="product-title">
+              <div class="service-detail">
+                <div class="service-title">
                   <hr class="w-25" />
                   <h3 class="mb-0 text-center">Hardscape & Landscape</h3>
                   <hr class="w-25" />
@@ -180,10 +188,10 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="product-item">
+            <div class="service-item">
               <img class="img-fluid" src="img/waterproof.jpg" alt="" />
-              <div class="product-detail">
-                <div class="product-title">
+              <div class="service-detail">
+                <div class="service-title">
                   <hr class="w-25" />
                   <h3 class="mb-0 text-center">Waterproofing</h3>
                   <hr class="w-25" />
@@ -193,10 +201,10 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="product-item">
+            <div class="service-item">
               <img class="img-fluid" src="img/constructions.jpeg" alt="" />
-              <div class="product-detail">
-                <div class="product-title">
+              <div class="service-detail">
+                <div class="service-title">
                   <hr class="w-25" />
                   <h3 class="mb-0 text-center">Projects Management</h3>
                   <hr class="w-25" />
@@ -206,28 +214,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="row g-5 mt-5 wow fadeInUp" data-wow-delay="0.1s">
-          <h3>And Much More …</h3>
-          <p class="mt-2">
-            This is should be a prospective customer’s number one call to
-            action, e.g., requesting a quote or perusing your product catalog.
-          </p>
-          <div class="d-flex align-items-center mb-0 mt-0">
-            <div class="p-4">
-              <p><i class="fa fa-check text-primary me-2"></i>Sky Light</p>
-              <p><i class="fa fa-check text-primary me-2"></i>Shutters</p>
-              <p>
-                <i class="fa fa-check text-primary me-2"></i>Sophisticated steel
-                production line
-              </p>
-              <p><i class="fa fa-check text-primary me-2"></i>Louvers</p>
-              <p><i class="fa fa-check text-primary me-2"></i>Canopies</p>
-              <p>
-                <i class="fa fa-check text-primary me-2"></i>Windows & Doors
-              </p>
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
     <!-- End Services -->

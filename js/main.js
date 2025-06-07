@@ -43,7 +43,7 @@
   });
 
   // Clients Carousel
-  $(".clients-carousel").owlCarousel({
+  $(".projects-carousel").owlCarousel({
     autoplay: true,
     smartSpeed: 1000,
     loop: true,
@@ -87,25 +87,37 @@
       }
     }
   });
-  // Active navbar link
-  var currentPage = window.location.pathname.split("/").pop(); // e.g., "about.html"
-  $(".navbar-nav .nav-link").each(function () {
-    var linkPage = $(this).attr("href");
 
-    // Match exact href
+  // Active navbar link
+  var currentPage = window.location.pathname.split("/").pop().toLowerCase(); // e.g., "services.html" or "projects.html"
+
+  $(".navbar-nav .nav-link").each(function () {
+    var linkPage = $(this).attr("href").toLowerCase();
+
+    // activate "Services" link if on services.html or projects.html
+    if (
+      (currentPage === "services.html" || currentPage === "projects.html") &&
+      linkPage === "#"
+    ) {
+      $(".navbar-nav .nav-link").removeClass("active");
+      $(this).addClass("active");
+    }
+
+    // exact match
     if (linkPage === currentPage) {
       $(".navbar-nav .nav-link").removeClass("active");
       $(this).addClass("active");
     }
   });
-  // FAQ toggle
-  $(".faq-question").on("click", function () {
-    var $icon = $(this).find(".faq-icon");
-    var $answer = $(this).next(".faq-answer");
 
-    // Optional: Close all others first
-    $(".faq-answer").not($answer).slideUp();
-    $(".faq-icon").not($icon).text("+");
+  // Why Us toggle
+  $(".why-question").on("click", function () {
+    var $icon = $(this).find(".why-icon");
+    var $answer = $(this).next(".why-answer");
+
+    // Close all others first
+    $(".why-answer").not($answer).slideUp();
+    $(".why-icon").not($icon).text("+");
 
     // Toggle current
     $answer.slideToggle();
