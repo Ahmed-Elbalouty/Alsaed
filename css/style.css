@@ -316,7 +316,7 @@ input.check-toggle-round-flat:checked~.ar {
     color: var(--primary);
     font-size: 17px;
     height: 30px;
-    line-height: 28px;
+    line-height: 27px;
 }
 
 @media (max-width:991.98px) {
