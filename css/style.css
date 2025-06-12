@@ -265,6 +265,9 @@ body {
         border-top: 1px solid #EEEEEE;
     }
 }
+  .navbar .navbar-nav {
+        margin-inline-start: auto;
+    }
 
 ul.switch {
     list-style-type: none;
@@ -274,7 +277,7 @@ ul.switch {
 
 .switch {
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
     align-self: center;
     padding: 0 !important;
     display: flex;
@@ -602,6 +605,7 @@ input.check-toggle-round-flat:checked+label::after {
     padding: 1rem;
     border-radius: var(--main-round);
 }
+
 
 /* End Services Section */
 

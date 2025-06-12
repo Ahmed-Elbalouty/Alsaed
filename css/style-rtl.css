@@ -266,6 +266,9 @@ body {
         border-top: 1px solid #EEEEEE;
     }
 }
+.navbar .navbar-nav {
+        margin-inline-start: auto;
+    }
 
 ul.switch {
     list-style-type: none;
