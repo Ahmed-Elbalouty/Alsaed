@@ -124,6 +124,13 @@
     $answer.slideToggle();
     $icon.text($icon.text() === "+" ? "−" : "+");
   });
+
+  // Close overlay on click outside carousel
+  $(".overlay-carousel").on("click", function (e) {
+    if ($(e.target).is(".overlay-carousel")) {
+      $(this).removeClass("active");
+    }
+  });
 })(jQuery);
 
 // Carousel played on hover
@@ -134,4 +141,16 @@ function carouselHover(element, hover) {
   } else {
     $(carousel).carousel("cycle");
   }
+}
+
+// Open overlay carousel
+function openOverlayCarousel(index) {
+  document.getElementById("overlay-carousel-" + index).classList.add("active");
+}
+
+// Close overlay carousel
+function closeOverlayCarousel(index) {
+  document
+    .getElementById("overlay-carousel-" + index)
+    .classList.remove("active");
 }

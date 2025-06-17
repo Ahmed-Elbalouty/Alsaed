@@ -143,59 +143,80 @@
         <!-- Project Item -->
         <div class="project-box row shadow rounded overflow-hidden mb-5">
           <div class="col-lg-6 p-0 d-flex align-items-center">
-            <!-- Start Carousel -->
-            <div
-              class="container-fluid px-0"
-              onmouseover="carouselHover(this, false)"
-              onmouseout="carouselHover(this, false)"
-            >
-              <div
-                id="products-carousel-1"
-                class="carousel slide"
-                data-bs-ride="carousel"
-                data-bs-interval="2500"
-              >
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img
-                      class="w-100"
-                      src="img/constructions.jpeg"
-                      alt="Image"
-                    />
+            <div class="preview-image-wrapper position-relative">
+              <img
+                src="img/constructions.jpeg"
+                class="img-fluid preview-image"
+                alt="Preview Image"
+                style="cursor: pointer"
+                onclick="openOverlayCarousel(1)"
+              />
+            </div>
+
+            <!-- Overlay Carousel -->
+            <div id="overlay-carousel-1" class="overlay-carousel">
+              <button class="close-overlay" onclick="closeOverlayCarousel(1)">
+                <i class="fas fa-times" style="font-size: 30px"></i>
+              </button>
+
+              <div class="overlay-content">
+                <div
+                  id="carouselOverlay1"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                  data-bs-interval="2500"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        class="d-block w-100"
+                        src="img/constructions.jpeg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        class="d-block w-100"
+                        src="img/landscape.jpeg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        class="d-block w-100"
+                        src="img/elctrro.jpg"
+                        alt="Image"
+                      />
+                    </div>
                   </div>
-                  <div class="carousel-item">
-                    <img class="w-100" src="img/landscape.jpeg" alt="Image" />
-                  </div>
-                  <div class="carousel-item">
-                    <img class="w-100" src="img/elctrro.jpg" alt="Image" />
-                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselOverlay1"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselOverlay1"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#products-carousel-1"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#products-carousel-1"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
             </div>
+
             <!-- End Carousel -->
           </div>
 

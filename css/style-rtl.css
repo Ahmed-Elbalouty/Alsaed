@@ -321,7 +321,7 @@ input.check-toggle-round-flat:checked~.ar {
 }
 
 @media (max-width:991.98px) {
-    .switch>li.on {
+    .switch>li.ar {
         line-height: 26px;
     }
 }
